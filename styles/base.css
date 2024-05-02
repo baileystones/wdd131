@@ -87,7 +87,7 @@ main a:hover{
     grid-row: 1/2;
     height: 85px;
     font-size: 20px;
-    background-color: #79717c;
+    background-color: #444444;
     color: #DCE0D9;
 }
 
@@ -136,7 +136,7 @@ main a:hover{
     width: 300px;
     border-radius: .75rem;
     padding: 20px; 
-    background-color: rgb(196, 144, 193);
+    background-color: #5f5b5b;
     color: white;
     text-align: center;
     text-decoration: none;
