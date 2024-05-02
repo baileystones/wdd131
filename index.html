@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Bailey Stones</title>
+    <meta name="description" content="This is the WDD131 web page for Bailey Stones, a software engineering student at BYU-Idaho. She is from Arizona and loves reading, skiing, and volleyball.">
+    <meta name="author" content="Bailey Stones">
+    <link href="styles/base.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 -Stones</h1>
+
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Bailey Stones</h1>
+        <nav class="menu-links">
+            <a href="https://www.linkedin.com/in/bailey-stones/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/17?lang=eng" target="_blank">Favorite Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card"> 
+            <h2 class="card-header">About Me</h2>
+            <div id="about-me-text">
+            <div class="bio">
+                <p>Hello, my name is Bailey! I am from Queen Creek, Arizona, and am currently up in Rexburg for school. This is my sixth semester and I am studying software engineering. I changed my major fairly recently, so I have a ton to learn but I love this field of study. In my free time I enjoy reading, skiing, and volleyball.</p>
+            </div>
+            
+            <div id="about-me-pic">
+                <img src="images/bailey.jpg" alt="Picture of Bailey standing in the desert" width="250">
+            </div>
+            </div>
+
+
+            <h3 class="vb-section">Volleyball Life</h3>
+            <div id="volleyball-pic">
+                <img src="images/kstate.jpg" alt="Kansas State University logo" width="250">
+            </div>
+            
+            <div id="volleyball-text">
+            <p>I come from a huge volleyball family. That's how my parents met! My mom played collegiately and professionally, my parents have coached a majority of their life, and me and all my siblings have played club volleyball since we were tiny.</p>
+            
+            <p>Last summer, my sister committed to play Division 1 volleyball for Kansas-State University. Go Wildcats! I love watching any volleyball I can get and spending time on the court with my friends and family.
+            </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="card-header">Resources</h2>
+            <div id="resource-links">
+                <a href="https://validator.w3.org/" target="_blank">HTML Validator </a>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer">
+            <p> <p>&copy;<span id="currentYear"></span> | Bailey Stones | Arizona, USA</p>
+            <p id="lastModified"></p>
+        </nav>
+    </footer>
+
 </body>
 </html>
