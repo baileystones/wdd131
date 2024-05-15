@@ -1,12 +1,10 @@
 const navMenu = document.querySelector(".menu-links");
 const navButton = document.querySelector("#menu");
 const title = document.querySelector("#title");
-const navLinks = document.querySelector(".menu-links");
 
 navButton.addEventListener("click", () => {
     navMenu.classList.toggle("show");
     navButton.classList.toggle("show");
-    navLinks.classList.toggle("show");
 })
 
 window.addEventListener("resize", function() {
@@ -14,10 +12,10 @@ window.addEventListener("resize", function() {
         navMenu.classList.remove("show");
         navButton.classList.remove("show");
         navButton.style.display = "none";
-        navLinks.style.display = "flex";
+        navMenu.style.display = "flex";
     } else {
         navButton.style.display = "block";
-        navLinks.style.display = "none";
+        navMenu.style.display = "none";
     }
 })
 
