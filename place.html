@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prague, Czech Republic Page</title>
+    <meta name="description" content="This is the WDD131 Country Page assignment web page, featuring information on Prague, Czech Republic.">
+    <meta name="author" content="Bailey Stones">
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <!-- ADD FONT STUFF HERE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Prague, Czech Republic</h1>
+    </header>
+    <main>
+       
+        <div class="hero-img">
+            <picture>
+                <source srcset="images/big-prague.webp" media="(min-width: 1000px)">
+                <img src="images/little-prague.webp" alt="A riverside view of the Charles Bridge and Prague Castle">
+            </picture>   
+        </div>
+
+        <div id="data">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area:</b> 191.59 mi&sup2</li>
+                <li><b>Population:</b> 1.3 million</li>
+                <li><b>Capital:</b> Prague</li>
+                <li><b>Language:</b> Czech</li>
+                <li><b>Currency:</b> Koruna (Crown)</li>
+                <li><b>Time Zone:</b> CEST</li>
+            </ul>
+        </div>
+
+        <div id="weather">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="images/weather-icon.svg" alt="partly cloudy sun icon" width="50">
+                <ul>
+                    <li><b>Temperature:</b> 16° C</li>
+                    <li><b>Conditions:</b> Cloudy</li>
+                    <li><b>Wind:</b> 11.3 kph</li>
+                    <li><b>Humidity:</b> 87%</li>
+                    <li><b>Wind Chill:</b> <span id="wind-chill-factor">N/A</span></li>
+                </ul>
+
+        </div>
+
+    <footer>
+        <nav class="footer">
+            <p> <p>&copy;<span id="currentYear"></span> | Bailey Stones | Arizona, USA</p>
+            <p id="lastModified"></p>
+        </nav>
+    </footer>
+</body>
+</html>
