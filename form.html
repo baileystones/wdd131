@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="This is the WDD131 product review form assignment.">
+    <meta name="author" content="Bailey Stones">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="reviewForm">
+   
+                <label> Product Name </label>
+                    <select name="product" id="product-name" required>
+                            <option value="" disabled selected>Choose a Product...</option>
+                    </select>
+                </label>
+
+                
+                <label>Overall Rating</label>
+                <div id="rating">
+                    <input type="radio" id="5star" name="rating" value="5" required><label>☆☆☆☆☆</label>
+                    <input type="radio" id="4star" name="rating" value="4" required><label>☆☆☆☆</label>
+                    <input type="radio" id="3star" name="rating" value="3" required><label>☆☆☆</label>
+                    <input type="radio" id="2star" name="rating" value="2" required><label>☆☆</label>
+                    <input type="radio" id="1star" name="rating" value="1" required><label>☆</label>
+                </div>
+
+                <label>Date of Installation</label>
+                <input id="date" type="date" name="completeDate"></label>
+
+        </form>
+
+    
+    
+    
+    </main>
+     <footer>
+            <nav class="footer">
+                <p> <p>&copy;<span id="currentYear"></span> | Bailey Stones | Arizona, USA</p>
+                <p id="lastModified"></p>
+            </nav>
+        </footer>
+
+</body>
+</html>
