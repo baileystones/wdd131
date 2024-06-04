@@ -3,6 +3,12 @@
 body {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -11,19 +17,33 @@ header{
     margin: 0;
 }
 
+main{
+    padding: 0 2%;
+    min-height: 20rem;
+    text-align: center;
+    display: grid;
+   
+}
+
+.reviewForm{
+    text-align: left; 
+}
+
 h1{
     text-align: center;
 }
-main {
-    padding: 0 2%;
-    min-height: 20rem;
 
+label{
+    font-style: bold;
 }
 
+
+
 .container{
+    background-color: rgb(204, 199, 199);
     border: 1px black solid;
-    border-top: 10px black solid;
-    border-bottom: 10px black solid;
+    border-top: 10px rgb(55, 79, 214) solid;
+    border-bottom: 10px rgb(55, 79, 214) solid;
     border-radius: 10px;
     padding: .5rem 20%;
     margin: 2rem 0;
@@ -34,7 +54,12 @@ div{
     font-size: .9rem;
 }
 
-
+input[type="radio"],
+input[type="date"],
+input[type="checkbox"]
+{
+    display: block;
+}
 
 
 
