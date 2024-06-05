@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM content loaded");
+  
   const selectOptions = document.querySelector("#product-name");
-
+  console.log("Select element:", selectOptions);
+  
   const products = [
       {
         id: 'fc-1888',
