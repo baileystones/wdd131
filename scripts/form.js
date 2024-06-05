@@ -37,7 +37,7 @@ products.forEach(product => {
 });
 
 const form = document.getElementById("reviewForm");
-    form.addEventListener('submit', function (event) {
-        let reviewCount = localStorage.getItem("reviewCounter") || 0;
-        localStorage.setItem("reviewCounter", ++reviewCounter);
-    });
+form.addEventListener('submit', function (event) {
+    let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+    localStorage.setItem("reviewCounter", ++reviewCount);
+});
