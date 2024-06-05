@@ -33,12 +33,6 @@ h1{
     text-align: center;
 }
 
-label{
-    font-weight: bold;
-}
-
-
-
 .container{
     background-color: rgb(204, 199, 199);
     border: 1px black solid;
