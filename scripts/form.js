@@ -28,9 +28,11 @@ const products = [
     }
 ];
 
-const form = document.getElementById("reviewForm");
-form.addEventListener("submit", function (event) {
-    let reviewCount = localStorage.getItem("reviewCounter") || 0;
-    localStorage.setItem("reviewCounter", ++reviewCount);
+products.forEach(product => {
+    const newOption = document.createElement("option");
+    newOption.value = product.id;
+    newOption.textContent = product.name;
+  
+    selectOptions.appendChild(newOption);
 });
 
