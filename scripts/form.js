@@ -36,3 +36,8 @@ products.forEach(product => {
     selectOptions.appendChild(newOption);
 });
 
+const form = document.getElementById("reviewForm");
+    form.addEventListener('submit', function (event) {
+        let reviewCount = localStorage.getItem("reviewCounter") || 0;
+        localStorage.setItem("reviewCounter", ++reviewCounter);
+    });
