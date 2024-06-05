@@ -39,5 +39,7 @@ products.forEach(product => {
 const form = document.getElementById("reviewForm");
 form.addEventListener('submit', function (event) {
     let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+    console.log("Current review count:", reviewCount);
     localStorage.setItem("reviewCounter", ++reviewCount);
+    console.log("Updated review count:", reviewCount);
 });
