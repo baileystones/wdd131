@@ -18,7 +18,7 @@
 #menu {
     display: block;
     font-size: 2rem;
-    /* padding: .5rem .75rem; */
+    padding: .5rem .75rem; 
     text-decoration: none;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -76,6 +76,17 @@ body {
     background-color: var(--primary-color) ;
 }
 
+header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 30px var(--accent1-color);
+    font-family: "Sedan SC", serif;
+}
+
 main {
     max-width: 1400px;
     padding: 20px;
@@ -102,17 +113,6 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-}
-
-header {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 0 30px var(--accent1-color);
-    font-family: "Sedan SC", serif;
 }
 
 .container {
