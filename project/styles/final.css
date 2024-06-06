@@ -1,8 +1,8 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 
 :root {
     --primary-color: #d6d8d6   ;
@@ -92,10 +92,12 @@ main {
     padding: 20px;
     margin: 20px auto;
     flex: 1;
+    font-family: var(--paragraph-font);
 }
 
 h1 {
     font-size: 2rem;
+    font-family: var(--heading-font);
 }
 
 nav {
