@@ -71,10 +71,6 @@
     color: #DCE0D9;
 } 
 
-header{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
 body {
     font-family: "Lora", serif; 
     background-color: var(--primary-color) ;
@@ -87,8 +83,30 @@ main {
     flex: 1;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 header {
     background-color: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,6 +115,23 @@ header {
     font-family: "Sedan SC", serif;
 }
 
+.container {
+    display: grid;
+    grid-gap: 20px; 
+} 
+
+#home-image {
+    text-align: center;
+}
+#home-imgage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#home-txt {
+    text-align: center;
+}
 
 
 
