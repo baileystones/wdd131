@@ -84,6 +84,7 @@ main {
     max-width: 1400px;
     padding: 20px;
     margin: 20px auto;
+    flex: 1;
 }
 
 header {
