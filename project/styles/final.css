@@ -175,5 +175,18 @@ footer {
     #menu {
         display: none;
     }
+
+    .menu-links {
+        display: flex; 
+    }
+        
+    .menu-links a {
+        font-size: 1.1rem;
+    }
+    
+    #homepage-content {
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
 }
 
