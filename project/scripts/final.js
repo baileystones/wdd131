@@ -16,6 +16,10 @@ navMenu.addEventListener("click", function(event) {
 });
 
 
+
+
+
+
 /*const navMenu = document.querySelector(".menu-links");
 const navButton = document.querySelector("#menu");
 const title = document.querySelector("#title");

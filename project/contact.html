@@ -24,9 +24,51 @@
 
     <main>
         <h2 id="title">Contact</h2>
-        <div class="container">
+      
+        <div class="form-container">
+
+            <h3>Goob Club Member</h3>
+            <h4>Fields marked * are required</h4>
+            <form method="get" action="contact-review.html" class="reviewForm">
+                
+                <div class="section">
+                    <label for="userName">*Your Name</label>
+                      <input type="text" id="userName" name="name" required>
+                </div>
+
+
+                <div class="section">
+                <label>*Anticipated Position </label>
+                <div id="role">
+                    <input type="radio" id="friend" name="position" value="friend" required><label for="friend">Friend</label>
+                    <input type="radio" id="family" name="position" value="family" required><label for="friend">Family</label>
+                </div>
             
-       
+
+                <div class="section">
+                    <label>First Available Start Date</label>
+                    <input id="date" type="date" name="completeDate">
+                </div>
+
+                
+                <div class="section">
+                    <label>*Do you stay up late at night tinkering, inventing, and causing a ruckus? </label>
+                    <div id="role">
+                        <input type="radio" id="yes" name="answer" value="yes" required><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="answer" value="no" required><label for="no">No</label>
+                    </div>
+
+                <div class="section">
+                    <label for="review">*Why are you a good fit for this position?</label>
+                        <textarea id="review" name="review" required></textarea>
+                </div>
+
+                <div class="section">
+                    <input type="submit" value="Apply">
+                </div>
+
+
+        
         </div>
     </main>
 
