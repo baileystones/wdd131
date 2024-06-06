@@ -68,7 +68,10 @@
 body {
     font-family: "Lora", serif; 
     background-color: var(--primary-color) ;
-    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -130,7 +133,9 @@ nav a:hover {
 }
 
 
-
+main {
+    flex: 1; /* Main content area takes up remaining space */
+}
 footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
