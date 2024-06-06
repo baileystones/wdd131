@@ -17,23 +17,20 @@
 
 #menu {
     display: block;
-    font-size: 2rem;
-    padding: .5rem .75rem; 
+    font-size: 2rem; 
     text-decoration: none;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 #menu::before {
-    content:"☰"
+    content:"☰";
+    color:var(--primary-color);
 }
-
-.show {
-    display: block;
-} 
 
 #menu.show::before{ 
     content: "✗";
+    color:var(--primary-color);
 }
 
 .menu-links {
@@ -46,16 +43,13 @@
     top: 6rem;
     right: 0.5rem;
     left: 0.5rem;
-    width: auto;
-    align-items: center;
     position:absolute;
-    text-align: center;
     background-color: var(--accent2-color);
-    padding: 0 1rem;
 } 
 
 .menu-links a {
     text-decoration: none;
+    font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 1.3rem;
     padding: 0 1rem;
@@ -63,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .menu-links a:hover {
@@ -74,6 +68,7 @@
 body {
     font-family: "Lora", serif; 
     background-color: var(--primary-color) ;
+    margin: 0 20px;
 }
 
 header {
@@ -90,8 +85,7 @@ header {
 main {
     max-width: 1400px;
     padding: 20px;
-    margin: 20px auto;
-    flex: 1;
+    margin: 0 auto;
     font-family: var(--paragraph-font);
 }
 
@@ -139,6 +133,7 @@ nav a:hover {
 
 footer {
     background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 20px;
     text-align: center; 
     /*box-shadow: 0 0 30px var(--accent1-color); */
@@ -161,3 +156,24 @@ footer {
         display: none;
     }
 }
+
+@media (min-width: 740px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 0 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
