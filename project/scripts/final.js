@@ -34,7 +34,7 @@ const cards = [
     {
         title: "My Favorites",
         text: "I play for the Dinos little league baseball team, man I love those guys. I'm number six! I also love puppies, apple juice, swings, and comic books.",
-        img: "imagesbuds1.jpg"
+        img: "images\buds1.jpg"
     }
 ];
 
