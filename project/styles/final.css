@@ -1,73 +1,16 @@
- /** {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-
 :root {
-    --primary-color: #d6d8d6   ;
-    --secondary-color: #306939 ;
+    --primary-color: #d6d8d6;
+    --secondary-color: #306939;
     --accent1-color: black;
     --accent2-color: rgb(43, 124, 55);
-  
+
     --heading-font: "Seymour One", sans-serif;
     --paragraph-font: "Merriweather", sans-serif;
-  }
-  
-
-#menu {
-    display: block;
-    font-size: 2rem; 
-    text-decoration: none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
 }
-
-#menu::before {
-    content:"☰";
-    color:var(--primary-color);
-}
-
-#menu.show::before{ 
-    content: "✗";
-    color:var(--primary-color);
-}
-
-.menu-links {
-    display: none;
-}
-
-.menu-links.show {
-    display: flex;
-    flex-direction: column;
-    top: 6rem;
-    right: 0.5rem;
-    left: 0.5rem;
-    position:absolute;
-    background-color: var(--accent2-color);
-} 
-
-.menu-links a {
-    text-decoration: none;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    padding: 0 1rem;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*width: 100%;*/
-}
-
-.menu-links a:hover {
-    background: var(--accent2-color);
-    color: #DCE0D9;
-} 
 
 body {
-    font-family: "Lora", serif; 
-    background-color: var(--primary-color) ;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -82,25 +25,28 @@ header {
     align-items: center;
     padding: 20px;
     box-shadow: 0 0 30px var(--accent1-color);
-    font-family: "Sedan SC", serif;
+    font-family: var(--heading-font);
 }
 
 main {
     max-width: 1400px;
     padding: 20px;
     margin: 0 auto;
-    font-family: var(--paragraph-font);
+    flex: 1;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
 }
 
 h1 {
     font-size: 2rem;
-    font-family: var(--heading-font);
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 2.2rem;
-    font-style: bold;
+    font-weight: bold;
 }
 
 nav {
@@ -120,23 +66,73 @@ nav a:hover {
     text-decoration: underline;
 }
 
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--primary-color);
+}
+
+#menu.show::before {
+    content: "✗";
+    color: var(--primary-color);
+}
+
+.menu-links {
+    display: none;
+}
+
+.menu-links.show {
+    display: flex;
+    flex-direction: column;
+    top: 6rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    position: absolute;
+    background-color: var(--accent2-color);
+}
+
+.menu-links a {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-links a:hover {
+    background: var(--accent2-color);
+    color: #DCE0D9;
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2px; 
-} 
+    gap: 2px;
+}
 
 #home-image {
     text-align: center;
 }
 
-#home-txt h3{
+#home-txt h3 {
     font-size: 1.5rem;
 }
-#home-image img{
+
+#home-image img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -147,15 +143,10 @@ nav a:hover {
     text-align: center;
 }
 
-
-main {
-    flex: 1; /* Main content area takes up remaining space */
-}
 footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 20px;
-    text-align: center; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -163,9 +154,9 @@ footer {
     justify-content: center;
 }
 
-/*FORM CSS*/
+/* FORM CSS */
 
-.form-container{
+.form-container {
     background-color: rgb(204, 199, 199);
     border: 1px black solid;
     border-top: 10px var(--accent2-color) solid;
@@ -176,11 +167,11 @@ footer {
     font-family: var(--paragraph-font);
 }
 
-.form-container h3{
+.form-container h3 {
     font-family: var(--heading-font);
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-image: linear-gradient(#54cc90, #1d9e3d);
     color: #fff;
     width: 50%;
@@ -193,12 +184,12 @@ input[type="submit"]{
     font-family: var(--heading-font);
 }
 
-.form-container div{
+.form-container div {
     padding-top: 1rem;
     font-size: .9rem;
 }
 
-#date{
+#date, #text, #userName {
     width: 100%;
     padding: 8px;
 }
@@ -214,19 +205,11 @@ input[type="submit"]{
 }
 
 #position input[type="radio"] {
-    margin-right: 3px; 
-}
-#text{
-    width: 100%;
-    padding: 8px;
-}
-#userName{
-    width: 100%;
-    padding: 8px;
+    margin-right: 3px;
 }
 
 .form-container .section > label {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -239,9 +222,7 @@ input[type="submit"]{
     text-align: center;
 }
 
-
-
-
+/* About Me Grid and Cards */
 .about-me-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -255,6 +236,7 @@ input[type="submit"]{
     align-items: center;
     text-align: center;
     padding: 2rem;
+    color: var(--primary-color);
     background: var(--accent2-color);
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -275,6 +257,7 @@ input[type="submit"]{
     font-size: 1rem;
 }
 
+/* Responsive Grid Layout */
 @media (min-width: 600px) {
     .about-me-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -286,9 +269,6 @@ input[type="submit"]{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
-
 
 @media (min-width: 600px) {
     .container {
@@ -328,16 +308,16 @@ input[type="submit"]{
     }
 
     .menu-links {
-        display: flex; 
+        display: flex;
     }
-        
+
     .menu-links a {
         font-size: 1.1rem;
     }
-    
+
     #homepage-content {
         max-width: 1000px;
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 }
 
@@ -368,4 +348,3 @@ input[type="submit"]{
         text-align: center;
     }
 }
-
