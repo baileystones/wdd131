@@ -222,7 +222,7 @@ input[type="submit"] {
     text-align: center;
 }
 
-/* About Me Grid and Cards */
+/* About Me */
 .about-me-grid {
     display: grid;
     grid-template-columns: 1fr;
