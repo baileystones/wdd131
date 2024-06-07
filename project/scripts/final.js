@@ -45,6 +45,7 @@ function createGoobCard(cardData) {
     let img = document.createElement("img");
     img.src = cardData.img;
     img.alt = cardData.title;
+    img.loading="lazy";
 
     let title = document.createElement("h3");
     title.textContent = cardData.title;
