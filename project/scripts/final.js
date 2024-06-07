@@ -19,22 +19,22 @@ const cards = [
     {
         title: "The Orphanage",
         text: "Hey guys! The name's Goob, but you probably already knew that. I live at the orphanage on Sixth Street, and that's alright.",
-        img: "/project/images/orphanage.png"
+        img: "images/orphanage.png"
     },
     {
         title: "My Roommate",
         text: "My roomie is this guy named Lewis. Don't tell Lewis, but he can be a pain to share a room with. He's always up in the early hours of the morning tinkering away.",
-        img: "/project/images/lewis.jpg"
+        img: "images/lewis.jpg"
     },
     {
         title: "Baseball",
         text: "Lewis isn't all that bad though. Here's when he helped me get the winning catch!",
-        img: "/project/images/baseball.jpg"
+        img: "images/baseball.jpg"
     },
     {
         title: "My Favorites",
         text: "I play for the Dinos little league baseball team, man I love those guys. I'm number six! I also love puppies, apple juice, swings, and comic books.",
-        img: "/project/images/buds1.jpg"
+        img: "images/buds1.jpg"
     }
 ];
 
