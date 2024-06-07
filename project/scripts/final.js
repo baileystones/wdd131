@@ -19,7 +19,7 @@ const cards = [
     {
         title: "The Orphanage",
         text: "Hey guys! The name's Goob, but you probably already knew that. I live at the orphanage on Sixth Street, and that's alright.",
-        img: "images/orphanage.png"
+        img: "pimages\orphanage.png"
     },
     {
         title: "My Roommate",
